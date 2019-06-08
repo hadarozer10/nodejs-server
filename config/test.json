@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "1234",
+  "db": "mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users_tests"
+}
