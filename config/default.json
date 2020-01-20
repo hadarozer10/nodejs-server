@@ -1,6 +1,0 @@
-{
-  "jwtPrivateKey": "unsecureKey",
-  "db": "mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users",
-  "port": "3000",
-  "requireAuth": true
-}
