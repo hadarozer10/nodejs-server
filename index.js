@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const winston = require("winston");
 const https = require("https");
+const http = require("http");
 const fs = require("fs");
 const WebSocket = require("ws");
 
@@ -23,11 +24,11 @@ const httpsOptions = {
   cert: fs.readFileSync("ssl/key-cert.pem")
 };
 
-const server = https.createServer(httpsOptions, app).listen(port, () => {
+const server = http.createServer(app).listen(port, () => {
   winston.info(`Listening on port ${port}...`);
 });
 
-const wss = new WebSocket.Server({ server });
+// const wss = new WebSocket.Server({ server });
 // wss.on("connection", function connection(ws) {
 //   ws.on("message", function incoming(message) {
 //     console.log("received: %s", message);
