@@ -1,18 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const config = require("config");
 
-router.post("/", async (req, res) => {
-  const sessName = config.get("SESS_NAME");
-  new Promise((resolve, reject) => {
+router.get("/", (req, res, next) => {
+  if (req.session.ui) {
     req.session.destroy(err => {
-      if (err) reject(err);
-
-      res.clearCookie(sessName);
-
-      resolve(true);
+      if (err) {
+        return next(err);
+      }
+      res.clearCookie("connect.sid", { path: "/" });
+      res.send("done");
     });
-  });
+  } else {
+    res.send("failed to logout");
+  }
 });
 
 module.exports = router;
