@@ -1,22 +1,43 @@
-const config = require("config");
-const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
+
+const rateSchema = new mongoose.Schema({
+  currencyName: { type: String, required: true },
+  buyCashRate: { type: Number, required: true },
+  sellCashRate: { type: Number, required: true },
+  buyTransferRate: { type: Number, required: true },
+  sellTransferRate: { type: Number, required: true },
+  isInTable: { type: Boolean, required: true }
+});
 
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  email: { type: String, required: true },
+  email: {
+    type: String,
+    validate: {
+      validator: email => User.doesntExist({ email }),
+      message: `Email has already taken.`
+    },
+    required: true
+  },
   password: { type: String, required: true },
+  storeName: { type: String, required: true },
+  address: { type: String, required: true },
+  licenceNumber: { type: String, required: true },
+  currenciesRates: [rateSchema],
+  ip: { type: String, required: true },
   isAdmin: Boolean
 });
 
-userSchema.methods.generateAuthToken = function() {
-  const token = jwt.sign(
-    { _id: this._id, email: this.email, isAdmin: this.isAdmin },
-    config.get("jwtPrivateKey")
-  );
-  // in the line above we generate the payload and authentication token to the client as encoded token, we sent only the id for now
-  return token;
+userSchema.pre("save", async function() {
+  if (this.isModified("password")) {
+    this.password = await bcrypt.hash(this.password, 10);
+  }
+});
+
+userSchema.statics.doesntExist = async function(options) {
+  return (await this.where(options).countDocuments()) === 0;
 };
 
 const User = mongoose.model("Users", userSchema);
@@ -24,20 +45,24 @@ const User = mongoose.model("Users", userSchema);
 function validateUser(user) {
   const schema = {
     name: Joi.string()
-      .min(3)
+      .min(2)
+      .max(255)
       .required(),
     email: Joi.string()
-      .min(3)
+      .email()
+      .min(5)
+      .max(255)
       .required(),
     password: Joi.string()
-      .min(3)
-      .required()
+      .min(5)
+      .max(255)
+      .required(),
+    storeName: Joi.string().required(),
+    address: Joi.string().required(),
+    licenceNumber: Joi.string().required(),
+    ip: Joi.string().required()
   };
-  //relavant to lecture 119 to create
-  //other database for users and syncronize them
-  // name: Joi.objectId()
-  // .min(3)
-  // .required(),
+
   return Joi.validate(user, schema);
 }
 

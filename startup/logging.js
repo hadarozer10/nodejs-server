@@ -1,4 +1,3 @@
-//require("winston-mongodb");
 const winston = require("winston");
 require("express-async-errors");
 
@@ -18,10 +17,4 @@ module.exports = function() {
   );
 
   winston.add(winston.transports.File, { filename: "logfile.log" });
-  // winston.add(winston.transports.MongoDB, {
-  //   db:
-  //     "mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users",
-  // level: "error"
-  // });
-  //unauthorized issue with mongodb cant log messages
 };
