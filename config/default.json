@@ -1,0 +1,15 @@
+{
+  "jwtPrivateKey": "unsecureKey",
+  "db": "mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users",
+  "port": "3000",
+  "emailRecoveryMailer": "ozerhadar10@gmail.com",
+  "passwordRecoveryMailer": "realmadridcr7",
+  "requireAuth": true,
+  "REDIS_HOST": "redis-15937.c135.eu-central-1-1.ec2.cloud.redislabs.com",
+  "REDIS_PORT": "15937",
+  "REDIS_PASSWORD": "CCVY3PPYLXIWiJAVYWhugD9XWKuXicOU",
+  "SESS_NAME": "connect.sid",
+  "SESS_SECRET": "ssh!secret!",
+  "SESS_LIFETIME": "10000000 * 600000 * 60000 * 2000",
+  "NODE_ENV": "production"
+}
