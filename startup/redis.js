@@ -44,7 +44,7 @@ module.exports = async function(app) {
       saveUninitialized: false,
       secret: sessSecret,
       cookie: {
-        sameSite: secure, 
+        sameSite: false, 
         secure: false, //IN_PROD
         httpOnly: true
       }
