@@ -9,11 +9,11 @@ const error = require("../middlewares/error");
 
 module.exports = function(app) {
   app.use(express.json());
-  app.use("/userPage", users);
-  app.use("/login", login);
-  app.use("/autoLogin", autoLogin);
-  app.use("/logout", logout);
-  app.use("/currencies", currencies);
-  app.use("/forgotPassword", forgotPassword);
+  app.use("/api/userPage", users);
+  app.use("/api/login", login);
+  app.use("/api/autoLogin", autoLogin);
+  app.use("/api/logout", logout);
+  app.use("/api/currencies", currencies);
+  app.use("/api/forgotPassword", forgotPassword);
   app.use(error);
 };
