@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 
 const rateSchema = new mongoose.Schema({
   currencyName: { type: String, required: true },
+  currencyValue: { type: Number, required: true },
   buyCashRate: { type: Number, required: true },
   sellCashRate: { type: Number, required: true },
   buyTransferRate: { type: Number, required: true },
@@ -27,6 +28,7 @@ const userSchema = new mongoose.Schema({
   licenceNumber: { type: String, required: true },
   currenciesRates: [rateSchema],
   ip: { type: String, required: true },
+  isLoggedIn: Boolean,
   isAdmin: Boolean
 });
 

@@ -1,6 +1,13 @@
-module.exports = function(req, res) {
+const { User } = require("../models/usersModel");
+
+module.exports = async function(req, res) {
   if (req.session.ui) {
-    res.send(true);
+    let user = await User.findById(req.session.ui);
+    if (user.isLoggedIn) {
+      res.send(true);
+    } else {
+      res.send(false);
+    }
   } else {
     res.send(false);
   }

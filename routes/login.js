@@ -30,6 +30,10 @@ router.post("/", async (req, res) => {
     return res.status(400).send("user already logged in");
   }
 
+  await User.findByIdAndUpdate(user._id, {
+    isLoggedIn: true
+  });
+
   req.session.ui = user._id;
   res.send();
 });

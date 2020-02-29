@@ -7,8 +7,6 @@ const redisPass = config.get("REDIS_PASSWORD");
 const redisHost = config.get("REDIS_HOST");
 const sessName = config.get("SESS_NAME");
 const sessSecret = config.get("SESS_SECRET");
-// const sessLifetime = config.get("SESS_LIFETIME");
-const nodeEnv = config.get("NODE_ENV");
 
 module.exports = async function(app) {
   const RedisStore = connectRedis(session);
@@ -18,7 +16,6 @@ module.exports = async function(app) {
     password: redisPass
   });
 
-  const IN_PROD = nodeEnv === "production";
   const store = new RedisStore({ client });
 
   getSessions = async function(userId) {
@@ -40,14 +37,8 @@ module.exports = async function(app) {
       store,
       id: sessName,
       resave: false,
-      // rolling:true,
       saveUninitialized: false,
-      secret: sessSecret,
-      cookie: {
-        sameSite: false, 
-        secure: false, //IN_PROD
-        httpOnly: true
-      }
+      secret: sessSecret
     })
   );
 };

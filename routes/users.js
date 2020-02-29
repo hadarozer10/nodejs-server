@@ -55,7 +55,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       storeName: req.body.storeName,
       address: req.body.address,
       licenceNumber: req.body.licenceNumber
-    }).select("-password -ip -currenciesRates");
+    }).select("-password -ip -isLoggedIn");
   } else {
     user = await User.findByIdAndUpdate(req.body._id, {
       name: req.body.name,
@@ -63,7 +63,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       storeName: req.body.storeName,
       address: req.body.address,
       licenceNumber: req.body.licenceNumber
-    }).select("-password -ip -currenciesRates");
+    }).select("-password -ip -isLoggedIn");
   }
 
   res.send(user);
@@ -72,7 +72,7 @@ router.put("/updateUser", [auth], async (req, res) => {
 //get a user
 router.get("/me", [auth], async (req, res) => {
   const user = await User.findById(req.session.ui).select(
-    "-password -ip -currenciesRates"
+    "-password -ip -isLoggedIn"
   );
 
   if (!user)
@@ -95,7 +95,7 @@ router.delete("/:id", [auth, admin], async (req, res) => {
 router.get("/", [auth, admin], async (req, res) => {
   const users = await User.find()
     .sort("name")
-    .select("-password -ip -currenciesRates");
+    .select("-password -ip -currenciesRates -isLoggedIn");
   res.send(users);
 });
 
