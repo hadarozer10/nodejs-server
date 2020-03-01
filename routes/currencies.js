@@ -111,7 +111,7 @@ router.get("/updateCurrencies", [auth], async (req, res) => {
     currenciesRates: user.currenciesRates
   });
 
-  res.send("done");
+  res.send(currencies);
 });
 
 router.get("/getCurrencies", [auth], async (req, res) => {
