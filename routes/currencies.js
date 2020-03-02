@@ -99,19 +99,22 @@ router.get("/updateCurrencies", [auth], async (req, res) => {
 
   let israeliCurrency = currencies["ils-israeli-shekel"];
 
-  Object.keys(currencies).map(
-    currency => (currencies[currency] = israeliCurrency / currencies[currency])
-  );
+  Object.keys(currencies).map(currency => {
+    //update the currency array to shekel view
+    currencies[currency] = israeliCurrency / currencies[currency];
 
-  user.currenciesRates.forEach(rate => {
-    rate.currencyValue = currencies[rate.currencyName];
+    //update the user rates array with the updated currencies
+    if (user.currenciesRates[currencies[currency]]) {
+      user.currenciesRates[currencies[currency]].currencyValue =
+        currencies[currency];
+    }
   });
 
   updatedUser = await User.findByIdAndUpdate(req.session.ui, {
     currenciesRates: user.currenciesRates
   });
-
-  res.send(currencies);
+  const rates = user.currenciesRates;
+  res.send({ currencies, rates });
 });
 
 router.get("/getCurrencies", [auth], async (req, res) => {
