@@ -64,9 +64,21 @@ function validateUser(user) {
     licenceNumber: Joi.string().required(),
     ip: Joi.string().required()
   };
-
   return Joi.validate(user, schema);
 }
 
+function validateCurrency(rate) {
+  const schema = {
+    currencyName: Joi.string().required(),
+    currencyValue: Joi.number().required(),
+    buyCashRate: Joi.number().required(),
+    sellCashRate: Joi.number().required(),
+    buyTransferRate: Joi.number().required(),
+    sellTransferRate: Joi.number().required(),
+    isInTable: Joi.boolean()
+  };
+  return Joi.validate(rate, schema);
+}
 module.exports.User = User;
 module.exports.validate = validateUser;
+module.exports.validateCurrency = validateCurrency;
