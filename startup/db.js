@@ -10,5 +10,5 @@ module.exports = async function() {
       useUnifiedTopology: true,
       useNewUrlParser: true
     })
-    .then(() => winston.info(`connected to ${db}...`));
+    .then(() => winston.info("connected to db"));
 };

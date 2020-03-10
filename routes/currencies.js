@@ -2,28 +2,32 @@ const express = require("express");
 const { User } = require("../models/usersModel");
 const router = express.Router();
 const auth = require("../middlewares/authorization");
-const fs = require("fs");
+const { validateCurrency } = require("../models/usersModel");
 
-//get all Rates array
-router.get("/getRates", [auth], async (req, res) => {
-  const user = await User.findById(req.session.ui);
-
-  if (!user)
-    return res.status(404).send("the user with the given id not exist");
-
-  res.send(user.currenciesRates);
-});
-
-// add rate to Rates array
 router.post("/addRate", [auth], async (req, res) => {
   let user = await User.findById(req.session.ui);
   if (!user) {
     return res.status(400).send("user not exist");
   }
 
-  for (item in user.currenciesRates) {
-    if (item.currencyName === req.body.currencyName)
-      return res.status(400).send("the current currency allready have a rate");
+  const { error } = validateCurrency(req.body);
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
+
+  const checkExistance = await User.findById(
+    {
+      _id: req.session.ui
+    },
+    {
+      currenciesRates: {
+        $elemMatch: { currencyName: req.body.currencyName }
+      }
+    }
+  );
+
+  if (checkExistance.currenciesRates[0]) {
+    return res.status(400).send("this currency allready have a rate");
   }
 
   await User.findByIdAndUpdate(
@@ -67,6 +71,11 @@ router.post("/deleteRate", [auth], async (req, res) => {
 
 //update a rate from Rates array
 router.post("/updateRate", [auth], async (req, res) => {
+  const { error } = validateCurrency(req.body);
+  if (error) {
+    return res.status(400).send(error.details[0].message);
+  }
+
   user = await User.updateOne(
     {
       _id: req.session.ui,
@@ -75,6 +84,7 @@ router.post("/updateRate", [auth], async (req, res) => {
     {
       $set: {
         "currenciesRates.$.currencyName": req.body.currencyName,
+        "currenciesRates.$.currencyValue": req.body.currencyValue,
         "currenciesRates.$.buyCashRate": req.body.buyCashRate,
         "currenciesRates.$.sellCashRate": req.body.sellCashRate,
         "currenciesRates.$.buyTransferRate": req.body.buyTransferRate,
@@ -88,43 +98,6 @@ router.post("/updateRate", [auth], async (req, res) => {
     return res.status(404).send("the user with the given id not exist");
 
   res.send();
-});
-
-router.get("/updateCurrencies", [auth], async (req, res) => {
-  let currencies = JSON.parse(fs.readFileSync("./currencies.json"));
-  const user = await User.findById(req.session.ui);
-
-  if (!user || !currencies)
-    return res.status(404).send("server failure, cant get currencies");
-
-  let israeliCurrency = currencies["ils-israeli-shekel"];
-
-  Object.keys(currencies).map(currency => {
-    //update the currency array to shekel view
-    currencies[currency] = israeliCurrency / currencies[currency];
-
-    //update the user rates array with the updated currencies
-    if (user.currenciesRates[currencies[currency]]) {
-      user.currenciesRates[currencies[currency]].currencyValue =
-        currencies[currency];
-    }
-  });
-
-  updatedUser = await User.findByIdAndUpdate(req.session.ui, {
-    currenciesRates: user.currenciesRates
-  });
-  const rates = user.currenciesRates;
-  res.send({ currencies, rates });
-});
-
-router.get("/getCurrencies", [auth], async (req, res) => {
-  let currencies = JSON.parse(fs.readFileSync("./currencies.json"));
-  let israeliCurrency = currencies["ils-israeli-shekel"];
-
-  Object.keys(currencies).map(
-    currency => (currencies[currency] = israeliCurrency / currencies[currency])
-  );
-  res.send(currencies);
 });
 
 module.exports = router;

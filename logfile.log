@@ -2457,3 +2457,579 @@
 {"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-02-28T22:51:12.830Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2020-02-29T00:55:12.586Z"}
 {"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-02-29T00:55:13.349Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T10:21:19.931Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T10:21:21.553Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T10:21:57.090Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T10:21:58.184Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T10:23:59.649Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T10:24:00.799Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T10:27:43.133Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T10:27:44.321Z"}
+{"message":"ENOENT: no such file or directory, open './currencies.json'","stack":"Error: ENOENT: no such file or directory, open './currencies.json'\n    at Object.openSync (fs.js:439:3)\n    at Object.readFileSync (fs.js:344:35)\n    at router.get (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:94:34)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)","errno":-4058,"syscall":"open","code":"ENOENT","path":"./currencies.json","level":"error","timestamp":"2020-03-01T10:28:10.005Z"}
+{"message":"ENOENT: no such file or directory, open './currencies.json'","stack":"Error: ENOENT: no such file or directory, open './currencies.json'\n    at Object.openSync (fs.js:439:3)\n    at Object.readFileSync (fs.js:344:35)\n    at router.get (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:118:34)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)","errno":-4058,"syscall":"open","code":"ENOENT","path":"./currencies.json","level":"error","timestamp":"2020-03-01T10:28:10.037Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T10:29:30.341Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T10:29:31.348Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T10:29:41.262Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T10:29:42.432Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-01T13:15:08.551Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-01T13:15:09.519Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T11:39:41.431Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T11:39:47.245Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T11:40:51.907Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T11:40:57.000Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T13:46:09.468Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T13:46:15.169Z"}
+{"message":"currency is not defined","stack":"ReferenceError: currency is not defined\n    at router.get (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:104:38)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","timestamp":"2020-03-02T13:46:21.256Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T13:46:50.095Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T13:46:50.839Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T13:47:51.100Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T13:47:51.809Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T13:52:07.767Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T13:52:13.528Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T14:18:52.994Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T14:18:53.733Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-02T14:50:59.510Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-02T14:51:00.286Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T12:39:43.863Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T12:39:44.626Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T15:37:50.477Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T15:37:57.460Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T16:57:07.363Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T16:57:09.090Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T18:14:47.489Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T18:14:48.468Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T19:53:21.331Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T19:53:22.589Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T19:54:25.968Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T19:54:26.832Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T19:58:11.728Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T19:58:12.577Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T20:02:10.596Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T20:02:11.429Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T20:06:01.689Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T20:06:02.465Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T20:08:30.187Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T20:08:31.484Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T20:08:53.356Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T20:08:54.234Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T20:15:01.056Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T20:15:01.964Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T23:29:38.811Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T23:29:39.716Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T23:30:59.079Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T23:31:00.414Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-03T23:47:25.673Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-03T23:47:26.702Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:07:38.943Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:07:39.727Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:09:13.882Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:09:14.734Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:09:49.185Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:09:49.977Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:11:37.293Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:11:38.477Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:29:03.741Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:29:04.676Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:29:47.995Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:29:48.792Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:30:13.713Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:30:14.567Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:31:49.305Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:31:50.269Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:32:41.365Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:32:42.297Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:33:56.388Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:33:57.317Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:38:48.497Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:38:49.343Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:55:22.569Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:55:23.578Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T00:59:28.693Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T00:59:29.674Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T01:02:12.231Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T01:02:13.282Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T16:58:44.693Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T16:58:46.061Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:14:25.184Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:14:26.083Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:15:57.489Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:15:58.347Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:18:43.833Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:18:44.970Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:24:59.145Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:24:59.889Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:33:11.083Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:35:40.130Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:35:41.557Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:36:45.118Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:36:46.016Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T17:39:55.810Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T17:39:56.828Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T18:04:16.381Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T18:04:17.154Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T18:06:55.498Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T18:06:56.808Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T18:12:21.001Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T18:12:21.943Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T18:15:13.214Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T18:15:14.609Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T18:15:51.474Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T18:15:52.418Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-04T18:17:10.530Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-04T18:17:11.545Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T00:50:18.904Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T00:50:20.207Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T00:59:12.645Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T00:59:13.527Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:01:14.414Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:01:15.534Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:01:28.853Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:01:29.817Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:03:46.763Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:03:47.598Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:05:18.656Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:05:19.585Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:07:47.658Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:07:48.475Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:09:38.613Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:09:39.521Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:13:41.854Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:13:42.904Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T01:14:28.357Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T01:14:29.177Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T10:22:26.514Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T10:22:27.563Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T10:27:49.732Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T10:27:50.876Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T10:30:37.805Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T10:30:39.030Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T11:04:53.566Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T11:04:55.259Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T11:15:36.177Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T11:15:37.541Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T11:18:11.001Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T13:28:08.065Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T13:28:09.167Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T13:30:39.150Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T13:30:40.112Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T22:56:06.047Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T22:56:07.067Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:01:18.522Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:01:19.458Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:02:50.568Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:02:51.567Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:06:44.044Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:06:45.197Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:07:28.829Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:07:29.879Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:08:21.716Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:08:22.700Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:08:50.600Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:08:51.750Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:09:29.359Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:09:30.652Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:14:30.241Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:14:31.104Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:25:34.737Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:25:35.649Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:28:08.988Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:28:09.903Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:30:52.255Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:30:53.272Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:31:30.309Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:32:32.411Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:32:33.272Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:32:46.726Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:35:37.478Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:35:38.464Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:35:44.902Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:37:37.975Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:37:38.872Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:37:47.713Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:39:35.021Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:39:35.995Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:39:41.930Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:41:22.323Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:41:23.274Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:41:28.226Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:42:52.827Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:42:54.027Z"}
+{"message":"Cannot read property 'ui' of undefined","stack":"TypeError: Cannot read property 'ui' of undefined\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\autoLogin.js:4:19)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at jsonParser (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\body-parser\\lib\\types\\json.js:110:7)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at cors (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:188:7)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\cors\\lib\\index.js:224:17","level":"error","timestamp":"2020-03-05T23:43:22.928Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:45:33.594Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:46:48.072Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:46:49.168Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:49:07.215Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:49:08.270Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:49:47.315Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:49:48.070Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:51:21.210Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:51:22.342Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:52:31.693Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-05T23:53:16.790Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-05T23:53:17.755Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-06T00:43:41.561Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-06T00:43:42.446Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-06T00:46:45.992Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-06T00:46:47.009Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-06T00:47:37.696Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-06T00:47:38.554Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T19:45:10.231Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T19:45:12.286Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:38:57.214Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T22:38:58.753Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:40:25.310Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T22:40:26.171Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:42:05.831Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T22:42:06.811Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:49:24.970Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T22:49:25.890Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:50:12.966Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T22:50:13.742Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:51:41.095Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:54:10.080Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:56:26.221Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T22:56:27.059Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:57:33.261Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:59:17.989Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T22:59:35.708Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:01:38.173Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:02:02.836Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:05:48.249Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:05:49.265Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:06:20.687Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:06:21.738Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:06:41.344Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:06:42.447Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:08:54.129Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:09:11.694Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:09:12.523Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:09:46.685Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:09:47.485Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:11:06.193Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:11:07.219Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:11:14.902Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:18:31.142Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:18:41.327Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:18:42.254Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:19:01.805Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:19:02.645Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:20:32.732Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:23:20.871Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:24:40.916Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:25:20.846Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:25:21.716Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:25:42.853Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:25:43.661Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:27:03.641Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:27:04.543Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:27:26.948Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:28:25.367Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:28:26.177Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:28:46.077Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:28:46.868Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:29:17.526Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:29:18.366Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:33:15.131Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:33:46.591Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:33:47.489Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:34:21.661Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:34:22.676Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:35:13.315Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:35:14.358Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:41:02.025Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:41:02.821Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:41:21.402Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:41:22.209Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:41:55.705Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:41:56.635Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:46:08.605Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:46:09.574Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:46:39.008Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:46:39.778Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:47:41.694Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:47:42.780Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:48:40.230Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:48:41.584Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:49:36.615Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:49:37.536Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:50:20.081Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:50:21.077Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:51:30.919Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:51:31.861Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:53:06.507Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:53:07.569Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-08T23:53:47.171Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-08T23:53:48.059Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T00:09:56.413Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T00:09:57.355Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T00:11:54.713Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T00:11:55.709Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T00:12:35.559Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T00:12:36.564Z"}
+{"message":"log is not defined","stack":"ReferenceError: log is not defined\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\login.js:38:3)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","timestamp":"2020-03-09T00:14:49.149Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T00:15:27.188Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T00:15:28.544Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T00:16:48.313Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T00:16:49.103Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:11:08.536Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:11:09.364Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:29:00.047Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:29:05.117Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:35:51.715Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:35:52.503Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:36:18.733Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:36:19.485Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:36:40.171Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:36:40.944Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:37:05.177Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:37:24.481Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:37:25.500Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:41:51.100Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:41:52.315Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:44:46.243Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:44:47.059Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:45:07.617Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:45:08.470Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:46:06.427Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:46:23.537Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:46:28.720Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:47:14.889Z"}
+{"level":"info","message":"connected to mongodb+srv://hadarOzer:realmadridcr7.@presentsdb-q4wt6.mongodb.net/Users...","timestamp":"2020-03-09T11:47:20.044Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:47:56.569Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T11:48:02.451Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:50:27.600Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T11:50:28.411Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:51:05.747Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T11:51:06.584Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T11:51:40.738Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T11:51:41.569Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:00:46.903Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:00:47.925Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:02:26.428Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:02:27.141Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:04:51.723Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:04:52.577Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:05:55.907Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:05:56.881Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:15:44.145Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:21:22.315Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:21:27.440Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:22:34.755Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:22:39.878Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:23:13.261Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:23:18.943Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T12:37:44.247Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T12:37:44.978Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:31:01.150Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:31:02.487Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:47:57.639Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:47:58.465Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:49:04.303Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:49:05.155Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:49:33.869Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:49:34.877Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:50:27.224Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:50:28.221Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:50:41.738Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:50:42.544Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:52:17.320Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:52:18.242Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T20:53:39.963Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T20:53:40.795Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T21:39:58.889Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T21:39:59.824Z"}
+{"message":"Cast to number failed for value \"h\" at path \"sellCashRate\"","stringValue":"\"h\"","kind":"number","value":"h","path":"sellCashRate","reason":{"generatedMessage":true,"name":"AssertionError [ERR_ASSERTION]","code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="},"stack":"CastError: Cast to number failed for value \"h\" at path \"sellCashRate\"\n    at new CastError (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\error\\cast.js:39:11)\n    at SchemaNumber.cast (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\schema\\number.js:361:11)\n    at SchemaNumber.SchemaType.applySetters (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\schematype.js:975:12)\n    at SchemaNumber.SchemaType._castForQuery (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\schematype.js:1389:15)\n    at SchemaNumber.castForQuery (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\schema\\number.js:413:14)\n    at SchemaNumber.SchemaType.castForQueryWrapper (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\schematype.js:1358:15)\n    at castUpdateVal (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\helpers\\query\\castUpdate.js:515:19)\n    at walkUpdatePath (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\helpers\\query\\castUpdate.js:342:22)\n    at castUpdate (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\helpers\\query\\castUpdate.js:99:18)\n    at model.Query._castUpdate (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\query.js:4480:10)\n    at castDoc (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\query.js:4508:18)\n    at model.Query._updateThunk (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\query.js:3707:20)\n    at model.Query.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\query.js:3802:23)\n    at model.Query._wrappedThunk [as _updateOne] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:16:8)\n    at process.nextTick (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\kareem\\index.js:369:33)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","name":"CastError","level":"error","timestamp":"2020-03-09T23:42:53.127Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T23:53:36.689Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T23:53:37.452Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T23:56:40.569Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T23:56:41.452Z"}
+{"message":"validate is not defined","stack":"ReferenceError: validate is not defined\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:75:36)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)\n    at router (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:47:12)","level":"error","timestamp":"2020-03-09T23:57:09.416Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T23:57:43.440Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T23:57:44.232Z"}
+{"message":"Joi.Number is not a function","stack":"TypeError: Joi.Number is not a function\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:73:24)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-09T23:57:46.176Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T23:58:33.292Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T23:58:34.064Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:73:31)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-09T23:58:35.782Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-09T23:59:21.026Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-09T23:59:21.793Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:74:31)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-09T23:59:23.212Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:00:09.660Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:00:10.504Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:74:29)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-10T00:00:11.511Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:74:29)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-10T00:01:09.116Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:19:51.397Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:19:52.161Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:74:29)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-10T00:19:58.895Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:21:08.877Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:21:09.796Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:75:30)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-10T00:21:12.362Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:26:25.419Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:26:26.248Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:73:29)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-10T00:26:31.204Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:28:45.470Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:28:46.246Z"}
+{"message":"Cannot read property 'required' of undefined","stack":"TypeError: Cannot read property 'required' of undefined\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:73:29)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at Function.handle (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\index.js:174:3)","level":"error","timestamp":"2020-03-10T00:28:49.158Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:29:44.393Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:29:45.182Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T00:31:53.574Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T00:31:54.364Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T01:47:24.127Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T01:47:25.241Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T02:04:14.220Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T02:04:14.971Z"}
+{"message":"Invalid schema content: (isInTable)","stack":"AssertionError [ERR_ASSERTION]: Invalid schema content: (isInTable)\n    at new AssertionError (internal/assert.js:269:11)\n    at Object.exports.assert (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\hoek\\lib\\index.js:559:11)\n    at Object.exports.schema (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\joi\\lib\\cast.js:55:10)\n    at internals.Object.keys (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\joi\\lib\\types\\object\\index.js:358:35)\n    at Object.exports.schema (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\joi\\lib\\cast.js:36:29)\n    at module.exports.internals.Any.root.compile (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\joi\\lib\\index.js:159:25)\n    at module.exports.internals.Any.root.validate (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\joi\\lib\\index.js:145:29)\n    at validateCurrency (C:\\Users\\Hadar\\Desktop\\presentsServer\\models\\usersModel.js:79:14)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:76:21)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at module.exports (C:\\Users\\Hadar\\Desktop\\presentsServer\\middlewares\\authorization.js:7:5)\n    at newFn (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express-async-errors\\index.js:16:20)\n    at Layer.handle [as handle_request] (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\router\\route.js:137:13)","generatedMessage":false,"name":"AssertionError [ERR_ASSERTION]","code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"==","path":"isInTable","level":"error","timestamp":"2020-03-10T02:04:19.546Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T02:05:09.290Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T02:05:10.084Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:20:23.217Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:20:25.660Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:33:59.966Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:34:01.159Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:37:56.654Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:37:57.767Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:39:29.543Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:39:30.561Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:41:28.168Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:41:28.998Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:43:59.678Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:44:00.674Z"}
+{"message":"user.currenciesRates.foreach is not a function","stack":"TypeError: user.currenciesRates.foreach is not a function\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:29:24)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","timestamp":"2020-03-10T11:44:39.719Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T11:45:11.829Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T11:45:12.649Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:10:18.890Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:10:19.991Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:33:11.906Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:33:12.820Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:33:46.511Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:33:47.332Z"}
+{"message":"Cannot set headers after they are sent to the client","stack":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (_http_outgoing.js:470:11)\n    at ServerResponse.header (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\response.js:771:10)\n    at ServerResponse.send (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\express\\lib\\response.js:170:12)\n    at user.currenciesRates.forEach.rate (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:32:30)\n    at CoreDocumentArray.forEach (<anonymous>)\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:30:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","timestamp":"2020-03-10T18:40:46.494Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:49:08.699Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:49:09.509Z"}
+{"message":"Unsupported projection option: $pull: { currenciesRates: { currencyName: null } }","stack":"MongoError: Unsupported projection option: $pull: { currenciesRates: { currencyName: null } }\n    at Connection.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\pool.js:466:61)\n    at Connection.emit (events.js:182:13)\n    at processMessage (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\connection.js:384:10)\n    at TLSSocket.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\connection.js:553:15)\n    at TLSSocket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at TLSSocket.Readable.push (_stream_readable.js:219:10)\n    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)","operationTime":"6802653384210907140","ok":0,"errmsg":"Unsupported projection option: $pull: { currenciesRates: { currencyName: null } }","code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":"6802653384210907140","signature":{"hash":"L2GBHceK182TQcNBAq0rrpsBTeE=","keyId":"6748466899983532033"}},"name":"MongoError","level":"error","timestamp":"2020-03-10T18:49:25.677Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:50:46.228Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:50:47.148Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:52:02.492Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:52:03.453Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:55:07.987Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:55:08.953Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T18:59:35.480Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T18:59:36.373Z"}
+{"message":"Unsupported projection option: $elemMatch: { currenciesRates.currencyName: \"lyd-libyan-dinar\" }","stack":"MongoError: Unsupported projection option: $elemMatch: { currenciesRates.currencyName: \"lyd-libyan-dinar\" }\n    at Connection.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\pool.js:466:61)\n    at Connection.emit (events.js:182:13)\n    at processMessage (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\connection.js:384:10)\n    at TLSSocket.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\connection.js:553:15)\n    at TLSSocket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at TLSSocket.Readable.push (_stream_readable.js:219:10)\n    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)","operationTime":"6802656081450369025","ok":0,"errmsg":"Unsupported projection option: $elemMatch: { currenciesRates.currencyName: \"lyd-libyan-dinar\" }","code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":"6802656081450369025","signature":{"hash":"gj/bAjtw6S+dk18LJL1Ve76aY9U=","keyId":"6748466899983532033"}},"name":"MongoError","level":"error","timestamp":"2020-03-10T18:59:55.309Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:05:21.520Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:05:22.421Z"}
+{"message":"user.find is not a function","stack":"TypeError: user.find is not a function\n    at router.post (C:\\Users\\Hadar\\Desktop\\presentsServer\\routes\\currencies.js:29:26)\n    at process._tickCallback (internal/process/next_tick.js:68:7)","level":"error","timestamp":"2020-03-10T19:05:25.084Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:06:42.177Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:06:43.217Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:08:50.106Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:08:51.129Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:46:45.377Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:46:46.786Z"}
+{"message":"Unsupported projection option: $elemMatch: { currenciesRates.currencyName: \"bbd-barbadian-or-bajan-dollar\" }","stack":"MongoError: Unsupported projection option: $elemMatch: { currenciesRates.currencyName: \"bbd-barbadian-or-bajan-dollar\" }\n    at Connection.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\pool.js:466:61)\n    at Connection.emit (events.js:182:13)\n    at processMessage (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\connection.js:384:10)\n    at TLSSocket.<anonymous> (C:\\Users\\Hadar\\Desktop\\presentsServer\\node_modules\\mongoose\\node_modules\\mongodb\\lib\\core\\connection\\connection.js:553:15)\n    at TLSSocket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at TLSSocket.Readable.push (_stream_readable.js:219:10)\n    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)","operationTime":"6802668343581999105","ok":0,"errmsg":"Unsupported projection option: $elemMatch: { currenciesRates.currencyName: \"bbd-barbadian-or-bajan-dollar\" }","code":2,"codeName":"BadValue","$clusterTime":{"clusterTime":"6802668343581999105","signature":{"hash":"0ZQJRI2IlCeknEq7zZv85D3SL5k=","keyId":"6748466899983532033"}},"name":"MongoError","level":"error","timestamp":"2020-03-10T19:47:27.786Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:49:31.317Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:49:32.200Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:52:02.681Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:52:03.546Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:55:21.044Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:55:21.983Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T19:57:16.586Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T19:57:17.484Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T20:06:56.107Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T20:06:57.094Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:09:13.572Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T21:09:14.544Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:17:42.021Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:17:55.761Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:18:07.973Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:18:21.496Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:18:48.259Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:18:59.330Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:23:27.093Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T21:23:27.857Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:24:12.871Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T21:24:13.984Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:24:45.740Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T21:24:46.601Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:26:01.735Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T21:26:02.570Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T21:26:25.965Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T21:26:26.996Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:02:17.758Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:02:18.705Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:02:29.443Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:02:30.350Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:03:48.123Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:03:49.209Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:08:35.521Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:09:06.725Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:10:08.667Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:10:09.485Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:11:02.148Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:11:03.146Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:11:32.574Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:11:33.793Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:12:03.051Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:12:04.639Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:31:25.708Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:31:26.475Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:32:53.464Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:32:54.401Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:33:08.479Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:33:09.373Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:38:56.449Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:38:57.227Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:39:41.839Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:39:42.598Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:40:57.758Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:40:58.607Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:41:35.135Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:41:36.074Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:42:08.847Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:42:09.843Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:42:33.848Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:42:34.694Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T22:43:17.383Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T22:43:18.180Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:02:10.013Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:02:10.874Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:02:28.537Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:02:29.782Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:03:00.397Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:03:01.369Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:03:51.695Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:03:52.620Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:04:33.524Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:04:34.522Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:04:51.859Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:04:52.823Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:05:31.690Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:05:32.959Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:06:26.582Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:06:27.334Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:06:39.524Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:06:40.563Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:07:44.088Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:07:45.061Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:08:29.200Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:08:29.974Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:09:53.071Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:09:53.807Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:10:49.352Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:10:50.179Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:11:16.946Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:11:17.741Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:11:39.588Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:11:40.599Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:12:28.052Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:12:48.154Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:12:48.944Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:14:01.344Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:14:02.315Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:14:24.811Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:14:25.634Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:15:17.630Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:15:18.531Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:16:15.318Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:16:16.120Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:16:39.242Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:16:40.238Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2020-03-10T23:19:12.253Z"}
+{"level":"info","message":"connected to db","timestamp":"2020-03-10T23:19:13.202Z"}

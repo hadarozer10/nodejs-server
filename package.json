@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "express-session": "^1.17.0",
+    "express-socket.io-session": "^1.3.5",
     "generate-password": "^1.4.2",
     "helmet": "^3.21.2",
     "ioredis": "^4.14.1",
@@ -34,12 +35,13 @@
     "mongoose": "^5.8.9",
     "nodemailer": "^6.2.1",
     "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0",
     "underscore": "^1.9.1",
     "winston": "^2.4.0",
     "winston-mongodb": "^5.0.0"
   },
   "devDependencies": {
-    "jest": "^24.8.0",
+    "jest": "^25.1.0",
     "jshint": "^2.10.2",
     "supertest": "^4.0.2"
   }

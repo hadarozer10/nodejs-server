@@ -1,21 +1,23 @@
 const express = require("express");
 const app = express();
 const winston = require("winston");
-const http = require("http");
 const path = require("path");
 const port = process.env.PORT || 3000;
+const server = require("http").createServer(app);
+const fs = require("fs");
 
 require("./startup/db")();
-require("./startup/redis")(app);
 require("./startup/cors")(app);
 require("./startup/logging")();
+require("./startup/redis")(app);
 require("./startup/routes")(app);
 require("./startup/config")();
 require("./startup/validation")();
 require("./startup/prod")(app);
 
-app.disable("x-powered-by");
+const io = require("socket.io")(server);
 
+app.disable("x-powered-by");
 app.use(express.static(path.join(__dirname, "build")));
 
 if (true) {
@@ -26,7 +28,30 @@ if (true) {
   });
 }
 
-const server = http.createServer(app).listen(port, () => {
+let interval;
+io.on("connection", async socket => {
+  let currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
+  let israeliCurrency = currencies["ils-israeli-shekel"];
+  Object.keys(currencies).map(currency => {
+    currencies[currency] = israeliCurrency / currencies[currency];
+  });
+  socket.emit("message", currencies);
+
+  if (interval) {
+    clearInterval(interval);
+  }
+  interval = setInterval(async () => {
+    currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
+    let israeliCurrency = currencies["ils-israeli-shekel"];
+    Object.keys(currencies).map(currency => {
+      currencies[currency] = israeliCurrency / currencies[currency];
+    });
+    socket.emit("message", currencies);
+  }, 5000);
+  socket.on("disconnect", () => console.log("Client disconnected"));
+});
+
+server.listen(port, () => {
   winston.info(`Listening on port ${port}...`);
 });
 

@@ -38,7 +38,10 @@ module.exports = async function(app) {
       id: sessName,
       resave: false,
       saveUninitialized: false,
-      secret: sessSecret
+      secret: sessSecret,
+      cookie: {
+        SameSite: "none" // THIS is the config you are looing for.
+      }
     })
   );
 };
