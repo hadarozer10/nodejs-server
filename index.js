@@ -15,7 +15,9 @@ require("./startup/config")();
 require("./startup/validation")();
 require("./startup/prod")(app);
 
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, {
+  cookie: false
+});
 
 app.disable("x-powered-by");
 app.use(express.static(path.join(__dirname, "build")));
@@ -27,28 +29,34 @@ if (true) {
     });
   });
 }
+var interval;
+io.of("/socket.io").on("connection", async socket => {
+  // let currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
+  // let israeliCurrency = currencies["ils-israeli-shekel"];
+  // Object.keys(currencies).map(currency => {
+  //   currencies[currency] = israeliCurrency / currencies[currency];
+  // });
 
-let interval;
-io.on("connection", async socket => {
-  let currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
-  let israeliCurrency = currencies["ils-israeli-shekel"];
-  Object.keys(currencies).map(currency => {
-    currencies[currency] = israeliCurrency / currencies[currency];
-  });
-  socket.emit("message", currencies);
+  // socket.emit("message", currencies);
+  // if (interval) {
+  //   clearInterval(interval);
+  //   interval = null;
+  // }
 
-  if (interval) {
-    clearInterval(interval);
-  }
   interval = setInterval(async () => {
     currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
     let israeliCurrency = currencies["ils-israeli-shekel"];
     Object.keys(currencies).map(currency => {
       currencies[currency] = israeliCurrency / currencies[currency];
     });
+
     socket.emit("message", currencies);
   }, 5000);
-  socket.on("disconnect", () => console.log("Client disconnected"));
+
+  socket.on("disconnect", () => {
+    console.log("Client disconnected");
+    clearInterval(interval);
+  });
 });
 
 server.listen(port, () => {
