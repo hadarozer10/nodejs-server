@@ -29,7 +29,7 @@ if (true) {
     });
   });
 }
-var interval;
+
 io.of("/socket.io").on("connection", async socket => {
   // let currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
   // let israeliCurrency = currencies["ils-israeli-shekel"];
@@ -43,7 +43,8 @@ io.of("/socket.io").on("connection", async socket => {
   //   interval = null;
   // }
 
-  interval = setInterval(async () => {
+  console.log("Client connected");
+  var interval = setInterval(async () => {
     currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
     let israeliCurrency = currencies["ils-israeli-shekel"];
     Object.keys(currencies).map(currency => {
@@ -53,7 +54,7 @@ io.of("/socket.io").on("connection", async socket => {
     socket.emit("message", currencies);
   }, 5000);
 
-  socket.on("disconnect", () => {
+  socket.on("disconnect", function() {
     console.log("Client disconnected");
     clearInterval(interval);
   });
