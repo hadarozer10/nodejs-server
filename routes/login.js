@@ -10,6 +10,7 @@ router.post("/", async (req, res) => {
   if (error) {
     return res.status(400).send(error.details[0].message);
   }
+
   let user = await User.findOne({ email: req.body.email });
   if (!user) {
     return res.status(400).send(errorMessage);
@@ -44,7 +45,7 @@ function validate(req) {
       .email()
       .required(),
     password: Joi.string().required(),
-    userIp: Joi.string().required()
+    userIp: Joi.required()
   };
   return Joi.validate(req, schema);
 }
