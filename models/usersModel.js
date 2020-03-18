@@ -62,7 +62,7 @@ function validateUser(user) {
     storeName: Joi.string().required(),
     address: Joi.string().required(),
     licenceNumber: Joi.string().required(),
-    ip: Joi.string().required()
+    ip: Joi.required()
   };
   return Joi.validate(user, schema);
 }
