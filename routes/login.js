@@ -12,11 +12,13 @@ router.post("/", async (req, res) => {
   }
 
   let user = await User.findOne({ email: req.body.email });
+
   if (!user) {
     return res.status(400).send(errorMessage);
   }
 
   const loggedIn = await getSessions(user._id);
+
   const validPassword = await bcrypt.compare(req.body.password, user.password);
 
   if (!validPassword) {
@@ -36,6 +38,7 @@ router.post("/", async (req, res) => {
   });
 
   req.session.ui = user._id;
+  console.log("ll");
   res.send();
 });
 

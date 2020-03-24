@@ -23,13 +23,31 @@ module.exports = async function(app) {
       await store.all((error, results) => {
         if (error) return reject(err);
 
-        results.map(session => {
-          if (session.ui == userId) resolve(true);
+        results.map(async session => {
+          if (session.ui == userId) {
+            resolve(true);
+          }
         });
         resolve(false);
       });
     });
     return loggedIn;
+  };
+
+  deleteSession = async function(userId) {
+    new Promise(async (resolve, reject) => {
+      await store.all((error, results) => {
+        if (error) return reject(err);
+
+        results.map(async session => {
+          if (session.ui == userId) {
+            await store.clear(session);
+            resolve();
+          }
+        });
+      });
+    });
+    return;
   };
 
   app.use(
@@ -40,7 +58,8 @@ module.exports = async function(app) {
       saveUninitialized: false,
       secret: sessSecret,
       cookie: {
-        SameSite: "none" // THIS is the config you are looing for.
+        SameSite: "none",
+        httpOnly: false
       }
     })
   );

@@ -1,14 +1,12 @@
-const { User } = require("../models/usersModel");
+const express = require("express");
+const router = express.Router();
 
-module.exports = async function(req, res) {
+router.get("/", async (req, res) => {
   if (req.session.ui) {
-    let user = await User.findById(req.session.ui);
-    if (user.isLoggedIn) {
-      res.send(true);
-    } else {
-      res.send(false);
-    }
+    res.send(true);
   } else {
     res.send(false);
   }
-};
+});
+
+module.exports = router;
