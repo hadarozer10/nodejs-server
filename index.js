@@ -31,18 +31,6 @@ if (true) {
 }
 
 io.of("/socket.io").on("connection", async socket => {
-  // let currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
-  // let israeliCurrency = currencies["ils-israeli-shekel"];
-  // Object.keys(currencies).map(currency => {
-  //   currencies[currency] = israeliCurrency / currencies[currency];
-  // });
-
-  // socket.emit("message", currencies);
-  // if (interval) {
-  //   clearInterval(interval);
-  //   interval = null;
-  // }
-
   console.log("Client connected");
   var interval = setInterval(async () => {
     currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
