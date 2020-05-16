@@ -9,7 +9,7 @@ const rateSchema = new mongoose.Schema({
   sellCashRate: { type: Number, required: true },
   buyTransferRate: { type: Number, required: true },
   sellTransferRate: { type: Number, required: true },
-  isInTable: { type: Boolean, required: true }
+  isInTable: { type: Boolean, required: true },
 });
 
 const userSchema = new mongoose.Schema({
@@ -17,28 +17,30 @@ const userSchema = new mongoose.Schema({
   email: {
     type: String,
     validate: {
-      validator: email => User.doesntExist({ email }),
-      message: `Email has already taken.`
+      validator: (email) => User.doesntExist({ email }),
+      message: `Email has already taken.`,
     },
-    required: true
+    required: true,
   },
+  phone: { type: String, required: true },
   password: { type: String, required: true },
   storeName: { type: String, required: true },
   address: { type: String, required: true },
   licenceNumber: { type: String, required: true },
   currenciesRates: [rateSchema],
   ip: { type: String, required: true },
-  isLoggedIn: Boolean,
-  isAdmin: Boolean
+  userLanguage: { type: String, required: true },
+  isLoggedIn: { type: Boolean, required: true },
+  isAdmin: Boolean,
 });
 
-userSchema.pre("save", async function() {
+userSchema.pre("save", async function () {
   if (this.isModified("password")) {
     this.password = await bcrypt.hash(this.password, 10);
   }
 });
 
-userSchema.statics.doesntExist = async function(options) {
+userSchema.statics.doesntExist = async function (options) {
   return (await this.where(options).countDocuments()) === 0;
 };
 
@@ -49,36 +51,286 @@ function validateUser(user) {
     name: Joi.string()
       .min(2)
       .max(255)
-      .required(),
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Name is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "שם משתמש לא תקין",
+          };
+        }
+      }),
     email: Joi.string()
       .email()
       .min(5)
       .max(255)
-      .required(),
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Email is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "אימייל לא תקין",
+          };
+        }
+      }),
+    phone: Joi.string()
+      .min(5)
+      .max(255)
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Phone is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "טלפון לא תקין",
+          };
+        }
+      }),
     password: Joi.string()
       .min(5)
       .max(255)
-      .required(),
-    storeName: Joi.string().required(),
-    address: Joi.string().required(),
-    licenceNumber: Joi.string().required(),
-    ip: Joi.required()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Password is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "סיסמה לא תקינה",
+          };
+        }
+      }),
+    storeName: Joi.string()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Store name is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "שם חנות לא תקין",
+          };
+        }
+      }),
+    address: Joi.string()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Address is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "כתובת לא תקינה",
+          };
+        }
+      }),
+    licenceNumber: Joi.string()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "Licence number is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "מספר רשיון לא תקין",
+          };
+        }
+      }),
+    ip: Joi.required(),
+    userLanguage: Joi.required(),
+    isLoggedIn: Joi.required(),
   };
   return Joi.validate(user, schema);
 }
 
-function validateCurrency(rate) {
+function validateUpdate(user, language) {
   const schema = {
-    currencyName: Joi.string().required(),
-    currencyValue: Joi.number().required(),
-    buyCashRate: Joi.number().required(),
-    sellCashRate: Joi.number().required(),
-    buyTransferRate: Joi.number().required(),
-    sellTransferRate: Joi.number().required(),
-    isInTable: Joi.boolean()
+    name: Joi.string()
+      .min(2)
+      .max(255)
+      .required()
+      .error(() => {
+        if (language === "english") {
+          return {
+            message: "Name is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "שם משתמש לא תקין",
+          };
+        }
+      }),
+    email: Joi.string()
+      .email()
+      .min(5)
+      .max(255)
+      .required()
+      .error(() => {
+        if (language === "english") {
+          return {
+            message: "Email is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "אימייל לא תקין",
+          };
+        }
+      }),
+    phone: Joi.string()
+      .min(5)
+      .max(255)
+      .required()
+      .error(() => {
+        if (language === "english") {
+          return {
+            message: "Phone is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "טלפון לא תקין",
+          };
+        }
+      }),
+    storeName: Joi.string()
+      .required()
+      .error(() => {
+        if (language === "english") {
+          return {
+            message: "Store name is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "שם חנות לא תקין",
+          };
+        }
+      }),
+    address: Joi.string()
+      .required()
+      .error(() => {
+        if (language === "english") {
+          return {
+            message: "Address is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "כתובת לא תקינה",
+          };
+        }
+      }),
+    licenceNumber: Joi.string()
+      .required()
+      .error(() => {
+        if (language === "english") {
+          return {
+            message: "Licence number is incorrect or empty.",
+          };
+        } else {
+          return {
+            message: "מספר רשיון לא תקין",
+          };
+        }
+      }),
+  };
+  return Joi.validate(user, schema);
+}
+
+function validateCurrency(rate, userLanguage) {
+  const schema = {
+    currencyName: Joi.string()
+      .required()
+      .error(() => {
+        if (userLanguage === "english") {
+          return {
+            message: "Currency name is incorrect.",
+          };
+        } else {
+          return {
+            message: "מטבע אינו תקין",
+          };
+        }
+      }),
+    currencyValue: Joi.number()
+      .required()
+      .error(() => {
+        if (userLanguage === "english") {
+          return {
+            message: "Currency value is incorrect.",
+          };
+        } else {
+          return {
+            message: "ערך מטבע אינו תקין",
+          };
+        }
+      }),
+    buyCashRate: Joi.number()
+      .required()
+      .error(() => {
+        if (userLanguage === "english") {
+          return {
+            message: "operation canceled, illegal rate value.",
+          };
+        } else {
+          return {
+            message: "הפעולה לא בוצעה, ערך עמלה אינו תקין",
+          };
+        }
+      }),
+    sellCashRate: Joi.number()
+      .required()
+      .error(() => {
+        if (userLanguage === "english") {
+          return {
+            message: "operation canceled, illegal rate value.",
+          };
+        } else {
+          return {
+            message: "הפעולה לא בוצעה, ערך עמלה אינו תקין",
+          };
+        }
+      }),
+    buyTransferRate: Joi.number()
+      .required()
+      .error(() => {
+        if (userLanguage === "english") {
+          return {
+            message: "operation canceled, illegal rate value.",
+          };
+        } else {
+          return {
+            message: "הפעולה לא בוצעה, ערך עמלה אינו תקין",
+          };
+        }
+      }),
+    sellTransferRate: Joi.number()
+      .required()
+      .error(() => {
+        if (userLanguage === "english") {
+          return {
+            message: "operation canceled, illegal rate value.",
+          };
+        } else {
+          return {
+            message: "הפעולה לא בוצעה, ערך עמלה אינו תקין",
+          };
+        }
+      }),
+    isInTable: Joi.boolean(),
   };
   return Joi.validate(rate, schema);
 }
 module.exports.User = User;
 module.exports.validate = validateUser;
+module.exports.validateUpdate = validateUpdate;
 module.exports.validateCurrency = validateCurrency;

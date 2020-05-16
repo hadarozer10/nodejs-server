@@ -4,11 +4,11 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   try {
-    await User.findByIdAndUpdate(req.body.email, {
-      isLoggedIn: false
+    await User.findByIdAndUpdate(req.body._id, {
+      isLoggedIn: false,
     });
 
-    await deleteSession(req.body.email);
+    await deleteSession(req.body._id);
     res.send("done");
   } catch {
     res.send("cannot logout");
