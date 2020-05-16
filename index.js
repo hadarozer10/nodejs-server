@@ -16,33 +16,37 @@ require("./startup/validation")();
 require("./startup/prod")(app);
 
 const io = require("socket.io")(server, {
-  cookie: false
+  cookie: false,
 });
 
 app.disable("x-powered-by");
 app.use(express.static(path.join(__dirname, "build")));
 
 if (true) {
-  -app.get("/", function(req, res) {
-    +app.get("/*", function(req, res) {
+  -app.get("/", function (req, res) {
+    +app.get("/*", function (req, res) {
       res.sendFile(path.join(__dirname, "build", "index.html"));
     });
   });
 }
 
-io.of("/socket.io").on("connection", async socket => {
+io.of("/socket.io").on("connection", async (socket) => {
   console.log("Client connected");
+
+  // socket.on("initialCall", currencies);
   var interval = setInterval(async () => {
     currencies = await JSON.parse(fs.readFileSync("./currencies.json"));
     let israeliCurrency = currencies["ils-israeli-shekel"];
-    Object.keys(currencies).map(currency => {
+    Object.keys(currencies).map((currency) => {
       currencies[currency] = israeliCurrency / currencies[currency];
     });
+    var servernow = new Date();
+    serverDate = servernow.toLocaleDateString();
+    serverTime = servernow.toLocaleTimeString();
+    socket.emit("message", { currencies, serverDate, serverTime });
+  }, 60000);
 
-    socket.emit("message", currencies);
-  }, 5000);
-
-  socket.on("disconnect", function() {
+  socket.on("disconnect", function () {
     console.log("Client disconnected");
     clearInterval(interval);
   });

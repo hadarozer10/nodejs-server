@@ -18,13 +18,16 @@ module.exports = async function(app) {
 
   const store = new RedisStore({ client });
 
-  getSessions = async function(userId) {
+  getSessions = async function(userId, sess) {
     let loggedIn = new Promise(async (resolve, reject) => {
       await store.all((error, results) => {
         if (error) return reject(err);
 
         results.map(async session => {
           if (session.ui == userId) {
+            if (!sess) {
+              await store.clear(session);
+            }
             resolve(true);
           }
         });

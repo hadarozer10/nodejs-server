@@ -1,10 +1,10 @@
 const cors = require("cors");
 
-module.exports = function(app) {
+module.exports = function (app) {
   app.use(
     cors({
       origin: "https://www.moneyexchangeco.com/",
-      credentials: true
+      credentials: true,
     })
   );
 };
