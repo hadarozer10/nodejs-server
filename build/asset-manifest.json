@@ -1,25 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f281dab.chunk.css",
-    "main.js": "/static/js/main.f0e4d177.chunk.js",
-    "main.js.map": "/static/js/main.f0e4d177.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b8a3f321.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b8a3f321.js.map",
-    "static/css/2.a8cba42d.chunk.css": "/static/css/2.a8cba42d.chunk.css",
-    "static/js/2.a55d7e16.chunk.js": "/static/js/2.a55d7e16.chunk.js",
-    "static/js/2.a55d7e16.chunk.js.map": "/static/js/2.a55d7e16.chunk.js.map",
+    "main.css": "/static/css/main.c040101c.chunk.css",
+    "main.js": "/static/js/main.0cc8d908.chunk.js",
+    "main.js.map": "/static/js/main.0cc8d908.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b5849a1a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b5849a1a.js.map",
+    "static/css/2.39061eaf.chunk.css": "/static/css/2.39061eaf.chunk.css",
+    "static/js/2.448a6fbd.chunk.js": "/static/js/2.448a6fbd.chunk.js",
+    "static/js/2.448a6fbd.chunk.js.map": "/static/js/2.448a6fbd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3dea5758cb95fb2ec2784cbbb35153ca.js": "/precache-manifest.3dea5758cb95fb2ec2784cbbb35153ca.js",
+    "precache-manifest.9a8fbcd5d2ab2c55410342752785f8c2.js": "/precache-manifest.9a8fbcd5d2ab2c55410342752785f8c2.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.a8cba42d.chunk.css.map": "/static/css/2.a8cba42d.chunk.css.map",
-    "static/css/main.6f281dab.chunk.css.map": "/static/css/main.6f281dab.chunk.css.map",
-    "static/js/2.a55d7e16.chunk.js.LICENSE": "/static/js/2.a55d7e16.chunk.js.LICENSE"
+    "static/css/2.39061eaf.chunk.css.map": "/static/css/2.39061eaf.chunk.css.map",
+    "static/css/main.c040101c.chunk.css.map": "/static/css/main.c040101c.chunk.css.map",
+    "static/js/2.448a6fbd.chunk.js.LICENSE.txt": "/static/js/2.448a6fbd.chunk.js.LICENSE.txt",
+    "static/media/WhiteTransparentlogo.png": "/static/media/WhiteTransparentlogo.0b0e8367.png",
+    "static/media/bitcoin.jpg": "/static/media/bitcoin.8fc87d5f.jpg",
+    "static/media/calculator.jpg": "/static/media/calculator.a905bc39.jpg",
+    "static/media/colorTransparentLogo.png": "/static/media/colorTransparentLogo.a29b7065.png",
+    "static/media/sidebar-2.jpg": "/static/media/sidebar-2.310509c9.jpg",
+    "static/media/world1.jpg": "/static/media/world1.1e934c56.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8a3f321.js",
-    "static/css/2.a8cba42d.chunk.css",
-    "static/js/2.a55d7e16.chunk.js",
-    "static/css/main.6f281dab.chunk.css",
-    "static/js/main.f0e4d177.chunk.js"
+    "static/js/runtime-main.b5849a1a.js",
+    "static/css/2.39061eaf.chunk.css",
+    "static/js/2.448a6fbd.chunk.js",
+    "static/css/main.c040101c.chunk.css",
+    "static/js/main.0cc8d908.chunk.js"
   ]
 }
