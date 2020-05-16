@@ -28,11 +28,13 @@ router.post("/", async (req, res) => {
     }
   }
 
-  if (req.body.userIp != user.ip) {
-    if (user.userLanguage === "english") {
-      return res.status(400).send("ip address not alowed for this acount");
-    } else {
-      return res.status(400).send("כתובת האינטרנט אינה מורשת למשתמש זה");
+  if(!user.isAdmin) {
+    if (req.body.userIp != user.ip) {
+      if (user.userLanguage === "english") {
+        return res.status(400).send("ip address not alowed for this acount");
+      } else {
+        return res.status(400).send("כתובת האינטרנט אינה מורשת למשתמש זה");
+      }
     }
   }
 
