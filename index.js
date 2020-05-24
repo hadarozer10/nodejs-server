@@ -41,9 +41,11 @@ io.of("/socket.io").on("connection", async (socket) => {
       currencies[currency] = israeliCurrency / currencies[currency];
     });
     var servernow = new Date();
-    serverDate = servernow.toLocaleDateString();
-    serverTime = servernow.toLocaleTimeString();
-    socket.emit("message", { currencies, serverDate, serverTime });
+    serverTime = servernow.toLocaleTimeString("he-IL", {
+      hour12: false,
+      timeZone: "Asia/Jerusalem",
+    });
+    socket.emit("message", { currencies, serverTime });
   }, 60000);
 
   socket.on("disconnect", function () {
