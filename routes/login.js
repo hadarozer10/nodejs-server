@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
     }
   }
 
-  if(!user.isAdmin) {
+  if (!user.isAdmin) {
     if (req.body.userIp != user.ip) {
       if (user.userLanguage === "english") {
         return res.status(400).send("ip address not alowed for this acount");
