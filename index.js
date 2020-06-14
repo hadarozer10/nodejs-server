@@ -46,7 +46,7 @@ io.of("/socket.io").on("connection", async (socket) => {
       timeZone: "Asia/Jerusalem",
     });
     socket.emit("message", { currencies, serverTime });
-  }, 60000);
+  }, 30000);
 
   socket.on("disconnect", function () {
     console.log("Client disconnected");

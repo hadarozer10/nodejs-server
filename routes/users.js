@@ -23,6 +23,7 @@ router.post("/", [auth, admin], async (req, res) => {
       "storeName",
       "address",
       "licenceNumber",
+      "currencyPrecision",
       "ip",
       "userLanguage",
       "isLoggedIn",
@@ -47,6 +48,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       "storeName",
       "address",
       "licenceNumber",
+      "currencyPrecision",
     ]),
     user.userLanguage
   );
@@ -81,6 +83,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       storeName: req.body.storeName,
       address: req.body.address,
       licenceNumber: req.body.licenceNumber,
+      currencyPrecision: req.body.currencyPrecision,
       ip: req.body.ip,
       userLanguage: req.body.userLanguage,
     }).select("-password -ip -isLoggedIn");
@@ -92,6 +95,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       storeName: req.body.storeName,
       address: req.body.address,
       licenceNumber: req.body.licenceNumber,
+      currencyPrecision: req.body.currencyPrecision,
       ip: req.body.ip,
       userLanguage: req.body.userLanguage,
     }).select("-password -ip -isLoggedIn");

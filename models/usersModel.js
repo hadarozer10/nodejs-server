@@ -30,6 +30,7 @@ const userSchema = new mongoose.Schema({
   currenciesRates: [rateSchema],
   ip: { type: String, required: true },
   userLanguage: { type: String, required: true },
+  currencyPrecision: { type: Number, required: true },
   isLoggedIn: { type: Boolean, required: true },
   isAdmin: Boolean,
 });
@@ -148,6 +149,22 @@ function validateUser(user) {
           };
         }
       }),
+    currencyPrecision: Joi.number()
+      .required()
+      .biggerEquals(2)
+      .lowerThan(6)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message:
+              "number of precision is incorrect, please choose range between 2 to 5.",
+          };
+        } else {
+          return {
+            message: "מספר לדיוק המטבע לא תקין, אנא בחר טווח בין 2 ל - 5",
+          };
+        }
+      }),
     ip: Joi.required(),
     userLanguage: Joi.required(),
     isLoggedIn: Joi.required(),
@@ -239,6 +256,22 @@ function validateUpdate(user, language) {
         } else {
           return {
             message: "מספר רשיון לא תקין",
+          };
+        }
+      }),
+    currencyPrecision: Joi.number()
+      .required()
+      .min(2)
+      .max(5)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message:
+              "number of precision is incorrect, please choose range between 2 to 5.",
+          };
+        } else {
+          return {
+            message: "מספר לדיוק המטבע לא תקין, אנא בחר טווח בין 2 ל - 5",
           };
         }
       }),
