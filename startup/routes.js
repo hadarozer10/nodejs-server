@@ -8,8 +8,8 @@ const forgotPassword = require("../routes/forgotPassword");
 const currencies = require("../routes/currencies");
 const error = require("../middlewares/error");
 
-module.exports = function(app) {
-  app.use(express.json());
+module.exports = function (app) {
+  app.use(express.json({ limit: "50mb" }));
   app.use("/api/userPage", users);
   app.use("/api/login", login);
   app.use("/api/autoLogout", autoLogout);

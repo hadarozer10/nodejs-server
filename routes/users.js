@@ -23,10 +23,20 @@ router.post("/", [auth, admin], async (req, res) => {
       "storeName",
       "address",
       "licenceNumber",
+      "calculatorPrecision",
       "currencyPrecision",
       "ip",
       "userLanguage",
       "isLoggedIn",
+      "userLogo",
+      "logoEngSize",
+      "logoEngVer",
+      "logoEngHorz",
+      "logoHebSize",
+      "logoHebVer",
+      "logoHebHorz",
+      "backgroundColor",
+      "fontColor",
     ])
   );
   await user.save();
@@ -49,6 +59,15 @@ router.put("/updateUser", [auth], async (req, res) => {
       "address",
       "licenceNumber",
       "currencyPrecision",
+      "calculatorPrecision",
+      "logoEngSize",
+      "logoEngVer",
+      "logoEngHorz",
+      "logoHebSize",
+      "logoHebVer",
+      "logoHebHorz",
+      "backgroundColor",
+      "fontColor",
     ]),
     user.userLanguage
   );
@@ -84,8 +103,18 @@ router.put("/updateUser", [auth], async (req, res) => {
       address: req.body.address,
       licenceNumber: req.body.licenceNumber,
       currencyPrecision: req.body.currencyPrecision,
+      calculatorPrecision: req.body.calculatorPrecision,
       ip: req.body.ip,
       userLanguage: req.body.userLanguage,
+      userLogo: req.body.userLogo,
+      logoEngSize: req.body.logoEngSize,
+      logoEngVer: req.body.logoEngVer,
+      logoEngHorz: req.body.logoEngHorz,
+      logoHebSize: req.body.logoHebSize,
+      logoHebVer: req.body.logoHebVer,
+      logoHebHorz: req.body.logoHebHorz,
+      backgroundColor: req.body.backgroundColor,
+      fontColor: req.body.fontColor,
     }).select("-password -ip -isLoggedIn");
   } else if (req.body.password === "") {
     user = await User.findByIdAndUpdate(req.body._id, {
@@ -96,8 +125,18 @@ router.put("/updateUser", [auth], async (req, res) => {
       address: req.body.address,
       licenceNumber: req.body.licenceNumber,
       currencyPrecision: req.body.currencyPrecision,
+      calculatorPrecision: req.body.calculatorPrecision,
       ip: req.body.ip,
       userLanguage: req.body.userLanguage,
+      userLogo: req.body.userLogo,
+      logoEngSize: req.body.logoEngSize,
+      logoEngVer: req.body.logoEngVer,
+      logoEngHorz: req.body.logoEngHorz,
+      logoHebSize: req.body.logoHebSize,
+      logoHebVer: req.body.logoHebVer,
+      logoHebHorz: req.body.logoHebHorz,
+      backgroundColor: req.body.backgroundColor,
+      fontColor: req.body.fontColor,
     }).select("-password -ip -isLoggedIn");
   } else {
     if (user.userLanguage === "english") {

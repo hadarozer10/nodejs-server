@@ -31,7 +31,17 @@ const userSchema = new mongoose.Schema({
   ip: { type: String, required: true },
   userLanguage: { type: String, required: true },
   currencyPrecision: { type: Number, required: true },
+  calculatorPrecision: { type: Number, required: true },
   isLoggedIn: { type: Boolean, required: true },
+  userLogo: { type: String },
+  logoEngSize: { type: Number, required: true },
+  logoEngVer: { type: Number, required: true },
+  logoEngHorz: { type: Number, required: true },
+  logoHebSize: { type: Number, required: true },
+  logoHebVer: { type: Number, required: true },
+  logoHebHorz: { type: Number, required: true },
+  backgroundColor: { type: Object, required: true },
+  fontColor: { type: Object, required: true },
   isAdmin: Boolean,
 });
 
@@ -151,8 +161,8 @@ function validateUser(user) {
       }),
     currencyPrecision: Joi.number()
       .required()
-      .biggerEquals(2)
-      .lowerThan(6)
+      .min(2)
+      .max(6)
       .error(() => {
         if (user.userLanguage === "english") {
           return {
@@ -165,9 +175,34 @@ function validateUser(user) {
           };
         }
       }),
+    calculatorPrecision: Joi.number()
+      .required()
+      .min(0)
+      .max(20)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message:
+              "number of precision is incorrect, please choose range between 0 to 20.",
+          };
+        } else {
+          return {
+            message: "מספר לדיוק המטבע לא תקין, אנא בחר טווח בין 0 ל - 20",
+          };
+        }
+      }),
     ip: Joi.required(),
     userLanguage: Joi.required(),
     isLoggedIn: Joi.required(),
+    userLogo: Joi.required(),
+    logoEngSize: Joi.required(),
+    logoEngVer: Joi.required(),
+    logoEngHorz: Joi.required(),
+    logoHebSize: Joi.required(),
+    logoHebVer: Joi.required(),
+    logoHebHorz: Joi.required(),
+    backgroundColor: Joi.required(),
+    fontColor: Joi.required(),
   };
   return Joi.validate(user, schema);
 }
@@ -275,6 +310,30 @@ function validateUpdate(user, language) {
           };
         }
       }),
+    calculatorPrecision: Joi.number()
+      .required()
+      .min(0)
+      .max(20)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message:
+              "number of precision is incorrect, please choose range between 0 to 20.",
+          };
+        } else {
+          return {
+            message: "מספר לדיוק המטבע לא תקין, אנא בחר טווח בין 0 ל - 20",
+          };
+        }
+      }),
+    logoEngSize: Joi.required(),
+    logoEngVer: Joi.required(),
+    logoEngHorz: Joi.required(),
+    logoHebSize: Joi.required(),
+    logoHebVer: Joi.required(),
+    logoHebHorz: Joi.required(),
+    backgroundColor: Joi.required(),
+    fontColor: Joi.required(),
   };
   return Joi.validate(user, schema);
 }
