@@ -37,10 +37,11 @@ router.post("/", [auth, admin], async (req, res) => {
       "logoHebHorz",
       "backgroundColor",
       "fontColor",
+      "fontSize",
     ])
   );
   await user.save();
-  res.send();
+  return res.send({ message: "משתמש חדש נוצר בהצלחה" });
 });
 
 //update a user
@@ -68,6 +69,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       "logoHebHorz",
       "backgroundColor",
       "fontColor",
+      "fontSize",
     ]),
     user.userLanguage
   );
@@ -115,6 +117,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       logoHebHorz: req.body.logoHebHorz,
       backgroundColor: req.body.backgroundColor,
       fontColor: req.body.fontColor,
+      fontSize: req.body.fontSize,
     }).select("-password -ip -isLoggedIn");
   } else if (req.body.password === "") {
     user = await User.findByIdAndUpdate(req.body._id, {
@@ -137,6 +140,7 @@ router.put("/updateUser", [auth], async (req, res) => {
       logoHebHorz: req.body.logoHebHorz,
       backgroundColor: req.body.backgroundColor,
       fontColor: req.body.fontColor,
+      fontSize: req.body.fontSize,
     }).select("-password -ip -isLoggedIn");
   } else {
     if (user.userLanguage === "english") {
@@ -152,7 +156,13 @@ router.put("/updateUser", [auth], async (req, res) => {
     }
   }
 
-  res.send(user);
+  if (user.userLanguage === "english") {
+    return res.send({
+      message: "values updated successfully",
+    });
+  } else {
+    return res.send({ message: " ערכים עודכנו בהצלחה" });
+  }
 });
 
 //set user language
@@ -187,7 +197,7 @@ router.delete("/:id", [auth, admin], async (req, res) => {
   if (!user)
     return res.status(404).send("the user with the given id not exist");
 
-  res.send();
+  res.send({ message: " משתמש נמחק בהצלחה" });
 });
 
 //get all users

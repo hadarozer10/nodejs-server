@@ -1,6 +1,7 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
+const { min } = require("lodash");
 
 const rateSchema = new mongoose.Schema({
   currencyName: { type: String, required: true },
@@ -42,6 +43,7 @@ const userSchema = new mongoose.Schema({
   logoHebHorz: { type: Number, required: true },
   backgroundColor: { type: Object, required: true },
   fontColor: { type: Object, required: true },
+  fontSize: { type: Number, required: true },
   isAdmin: Boolean,
 });
 
@@ -195,14 +197,102 @@ function validateUser(user) {
     userLanguage: Joi.required(),
     isLoggedIn: Joi.required(),
     userLogo: Joi.required(),
-    logoEngSize: Joi.required(),
-    logoEngVer: Joi.required(),
-    logoEngHorz: Joi.required(),
-    logoHebSize: Joi.required(),
-    logoHebVer: Joi.required(),
-    logoHebHorz: Joi.required(),
+    logoEngSize: Joi.number()
+      .required()
+      .min(0)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "logo size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל לוגו לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoEngVer: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoEngHorz: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoHebSize: Joi.number()
+      .required()
+      .min(0)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "logo size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל לוגו לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoHebVer: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoHebHorz: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "logo size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל לוגו לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
     backgroundColor: Joi.required(),
     fontColor: Joi.required(),
+    fontSize: Joi.number()
+      .required()
+      .min(0)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "font size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל גופן רשומת טבלה לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
   };
   return Joi.validate(user, schema);
 }
@@ -326,14 +416,102 @@ function validateUpdate(user, language) {
           };
         }
       }),
-    logoEngSize: Joi.required(),
-    logoEngVer: Joi.required(),
-    logoEngHorz: Joi.required(),
-    logoHebSize: Joi.required(),
-    logoHebVer: Joi.required(),
-    logoHebHorz: Joi.required(),
+    logoEngSize: Joi.number()
+      .required()
+      .min(0)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "logo size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל לוגו לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoEngVer: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoEngHorz: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoHebSize: Joi.number()
+      .required()
+      .min(0)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "logo size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל לוגו לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoHebVer: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
+    logoHebHorz: Joi.number()
+      .required()
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "incorrect value, please enter number.",
+          };
+        } else {
+          return {
+            message: "ערך לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
     backgroundColor: Joi.required(),
     fontColor: Joi.required(),
+    fontSize: Joi.number()
+      .required()
+      .min(0)
+      .error(() => {
+        if (user.userLanguage === "english") {
+          return {
+            message: "font size is incorrect, please enter number.",
+          };
+        } else {
+          return {
+            message: "גודל גופן רשומת טבלה לא תקין, אנא בחר מספר",
+          };
+        }
+      }),
   };
   return Joi.validate(user, schema);
 }

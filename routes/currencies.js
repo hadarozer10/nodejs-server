@@ -112,16 +112,12 @@ router.post("/updateRate", [auth], async (req, res) => {
     }
   );
 
-  if (req.body.isInTable === user.isInTable) {
-    if (user.userLanguage === "english") {
-      return res.send({
-        message: "rates for the currency updated successfully",
-      });
-    } else {
-      return res.send({ message: "ערכי עמלת המטבע עודכנו בהצלחה" });
-    }
+  if (user.userLanguage === "english") {
+    return res.send({
+      message: "updated successfully",
+    });
   } else {
-    return res.send();
+    return res.send({ message: "עודכן בהצלחה" });
   }
 });
 
